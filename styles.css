@@ -20,7 +20,7 @@ body {
 }
 
 #draw-shapes {
-  margin: 2em;
+  margin-top: 2em;
   display: flex;
   justify-content: center;
 }
