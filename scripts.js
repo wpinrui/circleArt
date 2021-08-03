@@ -175,3 +175,18 @@ function handleColor() {
   containers.main.color = document.getElementById("colors").value;
   resize(containers.main, "draw-shapes");
 }
+
+// Download Button
+async function downloadSVG() {
+  document
+    .getElementsByTagName("svg")[1]
+    .setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  const svg = document.getElementById("draw-shapes").innerHTML;
+  const blob = new Blob([svg.toString()]);
+  const text = await blob.text();
+  const element = document.createElement("a");
+  element.download = "RoundArt.svg";
+  element.href = window.URL.createObjectURL(blob);
+  element.click();
+  element.remove();
+}
