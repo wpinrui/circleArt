@@ -1,0 +1,113 @@
+* {
+  font-family: Roboto, sans-serif;
+  color: black;
+}
+
+body {
+  background: #dddddd;
+}
+
+.content {
+  max-width: 800px;
+  margin: 3em auto;
+  background: white;
+  opacity: 0.95;
+  padding: 1em;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 8px;
+}
+
+#draw-shapes {
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+#sample {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.collapsible {
+  background-color: #545454;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.collapsible:hover {
+  background-color: #909090;
+}
+
+.collapsible:active {
+  background-color: #909090;
+  border-bottom: 0;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.dropdown-content {
+  padding: 0em 1em 0em 1em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 8px;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 20px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  cursor: pointer;
+  border-radius: 100px;
+}
