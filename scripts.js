@@ -12,7 +12,7 @@ const containers = {
     color: "black",
     id: "draw-shapes",
     space: undefined,
-    numOfLines: 0,
+    numOfLines: 20,
     lines: [],
     points: [],
   },
