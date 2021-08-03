@@ -141,7 +141,7 @@ function handleNumPoints() {
   document.getElementById("draw-shapes").innerHTML = "";
   resize(containers.main, "draw-shapes");
   linesSlider.max = containers.main.numOfPoints;
-  linesSlider.value = Math.min(linesSlider.max, linesSlider.value);
+  linesSlider.value = linesSlider.max;
   handleNumLines();
 }
 
