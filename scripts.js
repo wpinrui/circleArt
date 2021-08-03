@@ -79,7 +79,7 @@ function drawLine(container, index, color = "black") {
   }
 }
 
-function resize(container, id, max = 500) {
+function resize(container, id, max = 450) {
   container.width = Math.min(max, window.innerWidth - 48);
   container.height = Math.min(window.innerHeight - 48, container.width);
   container.c_x = container.width / 2;
